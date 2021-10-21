@@ -246,3 +246,26 @@ props
   (component must be nested)
 > we cannot update the value of props
 > immutable
+
+
+var a = [1,2,3,4]
+
+for(i=0;i<a.length;i++){
+    return a[i]*2
+}
+
+a.map((data) => {return data*2})
+<input onChange={()=>{this.handleChange('hiiii')}}/>
+
+
+function add(a,b){
+    return a+b
+}
+
+add(1,2)
+
+///////
+filter
+indexOf
+
+https://medium.com/techmagic/reactjs-vs-angular5-vs-vue-js-what-to-choose-in-2018-b91e028fa91d

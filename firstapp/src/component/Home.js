@@ -5,11 +5,19 @@ import ProductDisplay from './productDisplay';
 import JSON from './db.json';
 
 class Home extends Component{
+    constructor(){
+        super()
+
+        this.state={
+            products: JSON
+        }
+    }
     render(){
+        // console.log(this.state.products)
         return(
             <>
                 <Header/>
-                <ProductDisplay></ProductDisplay>
+                <ProductDisplay prodData={this.state.products}></ProductDisplay>
                 <Footer year="2021" month="Oct"/>
             </>
         )

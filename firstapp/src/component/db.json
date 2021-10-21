@@ -8,7 +8,7 @@
         "name":"3M 9004IN Particle Respirator Mask",
         "image":"https://i.ibb.co/8BJhgK2/r6xkegcloxgn5eq8owwg.jpg",
         "description":"box of 10 masks",
-        "cost":200
+        "cost":180
     },
     {
         "id":2,
@@ -19,7 +19,7 @@
         "name":"Vogmask Vector Havoc N99CV Mask Large",
         "image":"https://i.ibb.co/fHQ8JY4/kclatp7d9dt0dwgu4zkq.jpg",
         "description":"box of 10 masks",
-        "cost":300
+        "cost":200
     },
     {
         "id":3,
@@ -51,7 +51,7 @@
         "usess": "Skin Care",
         "name":"3M Avagard CHG Handrub Hand Sanitizer Antiseptic Solution",
         "image":"https://i.ibb.co/HpHFygW/vcweesrsrifexmfl55wo.png",
-        "description":"bottle of 100 ml Liquid",
+        "description":"bottle of 200 ml Liquid",
         "cost":200
     },
     {
