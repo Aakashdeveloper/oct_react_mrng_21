@@ -4,7 +4,7 @@ import './Header.css';
 class Header extends Component{
     constructor(){
         super()
-        console.log("inside>>>>>>>>constructor")
+        //console.log("inside>>>>>>>>constructor")
         this.state={
             title:'React Search',
             keyword:'User Input Here'
@@ -13,12 +13,14 @@ class Header extends Component{
 
     handleChange = (event) => {
         // console.log(event.target.value)
-        console.log("inside>>>>>>>>handleChange")
-        this.setState({keyword:event.target.value})
+        // console.log("inside>>>>>>>>handleChange")
+        this.setState({keyword:event.target.value?event.target.value:'User Input Here'})
+        // passing data to props
+        this.props.userText(event.target.value)
     }
 
     render(){
-        console.log("inside>>>>>>>>render")
+        //console.log("inside>>>>>>>>render")
         return(
             <Fragment>
                 <header>

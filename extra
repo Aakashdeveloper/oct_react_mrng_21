@@ -269,3 +269,28 @@ filter
 indexOf
 
 https://medium.com/techmagic/reactjs-vs-angular5-vs-vue-js-what-to-choose-in-2018-b91e028fa91d
+
+var a = [0,1,2,3]
+a.filter((data) => {return data*2})
+[1,2,3]
+
+var a = ["Delhi","Mumbai","Pune","London"]
+a.indexOf('Delhi')
+0
+a.indexOf('London')
+3
+a.indexOf('Amsterdam')
+-1
+a.indexOf('Venice')
+-1
+
+parent => child  (props)
+child => parent (props with function)
+
+// parent
+function add(a,b){
+    return a+b
+}
+
+// child
+add(1,2)
