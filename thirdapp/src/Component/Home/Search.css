@@ -1,0 +1,192 @@
+body{
+    margin: auto
+}
+
+#search{
+    height:500px;
+    width:100%;
+    background-image:url('https://i.ibb.co/Jv1Ckhg/manali.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100% 500px;
+}
+
+#brand{
+    display: inline-block;
+    margin-left:5%;
+    margin-top:1%;
+    font-size: 30px;
+    color:white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.social{
+    display: inline-block;
+    margin-left: 70%;
+}
+
+.socialIcon{
+    height:50px;
+    width:50px;
+}
+
+#logo{
+    height:150px;
+    width:150px;
+    background-color: white;
+    border-radius: 50%;
+    margin-left:45%;
+    margin-top:4%;
+    text-align: center;
+    font-size: 110px;
+}
+
+#logo > span{
+    color:#9ec917;
+    margin-left: -4%;
+    margin-top: 1%;
+    position: absolute;
+}
+
+#heading{
+    color:white;
+    font-size: 30px;
+    text-align: center;
+    background-color: #7faa21;
+    width:30%;
+    margin: auto;
+    margin-top: 2%;
+}
+
+#dropdown{
+    height:60px;
+    width:40%;
+    margin-left: 31%;
+    margin-top: 3%;
+}
+
+select{
+    height:60px;
+    width:40%
+}
+#secondSelect{
+    width:57%;
+    margin-left: 2%;
+}
+
+
+
+@media screen and (max-width:1600px){
+    body{
+        background-color: rgb(238, 250, 238);
+    }
+}
+
+@media screen and (max-width:1400px){
+    body{
+        background-color: skyblue;
+    }
+}
+
+@media screen and (max-width:1200px){
+    body{
+        background-color: lightcoral;
+    }
+}
+
+@media screen and (max-width:1000px){
+    body{
+        background-color: rgb(236, 241, 160);
+    }
+    #quickSearch{
+        width:80%;
+        margin-left: 10%;
+    }
+    .componentHeading{
+        color:white
+    }
+    
+    .componentSubHeading{
+        color:white
+    }
+    #QuickSearchHeading{
+        color:white;
+    }
+    
+    #QuickSearchSubHeading{
+        color:white;
+    }
+    #dropdown {
+        width: 50%;
+    }
+    #logo > span {
+        margin-left: -6%;
+    }
+    #heading {
+        width: 45%;
+        margin-left: 33%;
+    }
+}
+
+@media screen and (max-width:800px){
+    body{
+        background-color: rgb(184, 168, 241);
+    }
+    .tileContainer{
+        width:90%;
+    }
+    .componentHeading{
+        color:green
+    }
+    
+    .componentSubHeading{
+        color:gray
+    }
+    #QuickSearchHeading{
+        color:green;
+    }
+    
+    #QuickSearchSubHeading{
+        color:gray;
+    }
+    #dropdown {
+        width: 65%;
+    }
+    #logo > span {
+        margin-left: -8%;
+    }
+}
+
+@media screen and (max-width:600px){
+    body{
+        background-color: rgb(185, 241, 209);
+    }
+    #dropdown {
+        width: 80%;
+        margin-left:10%
+    }
+    #heading{
+        width: 45%;
+        margin-left: 25%;
+    }
+    #logo{
+        margin-left: 33%;
+    }
+}
+
+@media screen and (max-width:360px){
+    body{
+        background-color: rgb(185, 241, 209);
+    }
+    #dropdown {
+        width: 80%;
+        margin-left:10%
+    }
+    #heading{
+        width: 45%;
+        margin-left: 25%;
+    }
+    #logo{
+        margin-left: 33%;
+    }
+}

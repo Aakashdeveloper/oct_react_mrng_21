@@ -1,0 +1,64 @@
+#quickSearch{
+    height:500px;
+    width:70%;
+    margin-left: 15%;
+    margin-top: 2%;
+}
+
+#QuickSearchHeading{
+    color:green;
+    font-size:30px;
+    display:block;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 2%;
+}
+
+#QuickSearchSubHeading{
+    color:gray;
+    font-size:20px;
+    display:block;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 15px;
+    margin-left: 2%;
+}
+#mainTileContainer{
+    margin-top: 15px;
+}
+
+
+.tileContainer{
+    height:200px;
+    width:45%;
+    display: inline-block;
+    margin-left: 2%;
+    margin-top: 2%;
+    box-shadow: 10px 20px 10px #a6c1e2;
+}
+
+.tileComponent1{
+    width:50%;
+    float: left;
+}
+
+.tileComponent1>img{
+    width:100%;
+    height:200px;
+}
+
+.tileComponent2{
+    width:40%;
+    float: left;
+    margin-left: 30px;
+    margin-top: 50px;
+}
+
+.componentHeading{
+    font-Size:30px;
+    color:green
+}
+
+.componentSubHeading{
+    font-Size:20px;
+    color:gray
+}
