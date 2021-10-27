@@ -1,0 +1,24 @@
+{
+    "booking":[
+        {
+            "id":1,
+            "name":"Nikita",
+            "city":"Delhi"
+        },
+        {
+            "id":2,
+            "name":"John",
+            "city":"Keev"
+        },
+        {
+            "id":3,
+            "name":"Karan",
+            "city":"Venice"
+        },
+        {
+            "id":4,
+            "name":"Aakash",
+            "city":"Delhi"
+        }
+    ]
+}

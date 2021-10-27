@@ -349,3 +349,15 @@ https://developerpayment.herokuapp.com/paynow
 (Header) => {'x-access-token':'token value from login'}
 
 https://docs.github.com/en/developers/apps/building-oauth-apps/authorizing-oauth-apps
+
+///////////////////////////////////
+Dummy api
+
+#One Time
+> open cmd as administrator
+> npm i -g json-server
+
+# next Time
+> open cmd
+> go inside the folder
+> json-server --watch booking.json --port 5430
