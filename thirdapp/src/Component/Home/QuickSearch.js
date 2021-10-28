@@ -1,72 +1,36 @@
 import React, { Component } from 'react';
-import './QuickSearch.css'
+import QuickDisplay from './QuickDisplay';
+
+const url = "https://developerfunnel.herokuapp.com/booking"
 
 class QuickSearch extends Component {
+
+    // 1
+    constructor(){
+        super()
+
+        this.state={
+            tripType:''
+        }
+    }
+
+    // 2
     render(){
         return(
-            <div id="quickSearch">
-                <span id="QuickSearchHeading">
-                    Quick Searches
-                </span>
-                <span id="QuickSearchSubHeading">
-                    Discover Hotels By Type
-                </span>
-                <div id="mainTileContainer">
-                    <div class="tileContainer">
-                        <div class="tileComponent1">
-                            <img src="https://i.ibb.co/HBc81qR/luxury.jpg"/>
-                        </div>
-                        <div class="tileComponent2">
-                            <div class="componentHeading">
-                                Travel
-                            </div>
-                            <div class="componentSubHeading">
-                                Plan Your Travel Trip With Us
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tileContainer">
-                        <div class="tileComponent1">
-                            <img src="https://i.ibb.co/CVNX8NZ/holiday.jpg"/>
-                        </div>
-                        <div class="tileComponent2">
-                            <div class="componentHeading">
-                                Travel
-                            </div>
-                            <div class="componentSubHeading">
-                                Plan Your Travel Trip With Us
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tileContainer">
-                        <div class="tileComponent1">
-                            <img src="https://i.ibb.co/8P41bJx/business.jpg"/>
-                        </div>
-                        <div class="tileComponent2">
-                            <div class="componentHeading">
-                                Travel
-                            </div>
-                            <div class="componentSubHeading">
-                                Plan Your Travel Trip With Us
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tileContainer">
-                        <div class="tileComponent1">
-                            <img src="https://i.ibb.co/KrmBprr/travel.jpg"/>
-                        </div>
-                        <div class="tileComponent2">
-                            <div class="componentHeading">
-                                Travel
-                            </div>
-                            <div class="componentSubHeading">
-                                Plan Your Travel Trip With Us
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <QuickDisplay tripData={this.state.tripType}/>
         )
+    }
+
+    // 3 api call 
+    componentDidMount(){
+        fetch(url)
+        .then((res) => res.json())
+        .then((data) => {
+            this.setState({tripType:data})
+        })
+        .catch((err) => {
+            console.log(err)
+        })
     }
 }
 

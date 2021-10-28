@@ -9,12 +9,12 @@ class Search extends Component {
                     <div id="brand">
                         Developer Funnel
                     </div>
-                    <div class="social">
+                    <div className="social">
                         <a href="https://www.facebook.com/">
-                            <img src="images/facebook.png" class="socialIcon"/>
+                            <img src="images/facebook.png" className="socialIcon"/>
                         </a>
                         <a href="https://www.instagram.com/">
-                            <img src="images/insta.png" class="socialIcon"/>
+                            <img src="images/insta.png" className="socialIcon"/>
                         </a>
                     </div>
                 </div>
