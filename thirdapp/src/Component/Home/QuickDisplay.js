@@ -1,5 +1,6 @@
 import React from 'react';
-import './QuickSearch.css'
+import './QuickSearch.css';
+import {Link} from 'react-router-dom';
 
 const QuickDisplay = (props) => {
         console.log(props)
@@ -8,19 +9,21 @@ const QuickDisplay = (props) => {
             if(tripData){
                 return tripData.map((item,index) => {
                     return(
-                        <div className="tileContainer" key={item._id}>
-                            <div className="tileComponent1">
-                                <img src={item.image}/>
-                            </div>
-                            <div className="tileComponent2">
-                                <div className="componentHeading">
-                                    {item.name}
+                        <Link to={`/list/${item._id}`}>
+                            <div className="tileContainer" key={item._id}>
+                                <div className="tileComponent1">
+                                    <img src={item.image}/>
                                 </div>
-                                <div className="componentSubHeading">
-                                    Plan Your {item.name} Trip With Us
+                                <div className="tileComponent2">
+                                    <div className="componentHeading">
+                                        {item.name}
+                                    </div>
+                                    <div className="componentSubHeading">
+                                        Plan Your {item.name} Trip With Us
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </Link>
                     )
                 })
             } 

@@ -23,7 +23,7 @@ class QuickSearch extends Component {
 
     // 3 api call 
     componentDidMount(){
-        fetch(url)
+        fetch(url,{method:'GET'})
         .then((res) => res.json())
         .then((data) => {
             this.setState({tripType:data})
@@ -35,3 +35,5 @@ class QuickSearch extends Component {
 }
 
 export default QuickSearch
+
+//176358 
