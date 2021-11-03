@@ -28,9 +28,10 @@ class Listing extends Component {
     }
     //api call 
     componentDidMount(){
-        const hotelId = this.props.match.params.id;
-        console.log(hotelId)
-        axios.get(`${listingUrl}/${hotelId}`)
+        const tripId = this.props.match.params.id;
+        console.log(tripId)
+        sessionStorage.setItem('tripId',tripId)
+        axios.get(`${listingUrl}/${tripId}`)
         .then((res) =>  {this.setState({listing:res.data})})
 
     }
