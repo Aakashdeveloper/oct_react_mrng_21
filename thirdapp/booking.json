@@ -1,24 +1,36 @@
 {
-    "booking":[
-        {
-            "id":1,
-            "name":"Nikita",
-            "city":"Delhi"
-        },
-        {
-            "id":2,
-            "name":"John",
-            "city":"Keev"
-        },
-        {
-            "id":3,
-            "name":"Karan",
-            "city":"Venice"
-        },
-        {
-            "id":4,
-            "name":"Aakash",
-            "city":"Delhi"
-        }
-    ]
+  "booking": [
+    {
+      "id": 81597,
+      "hotel_name": "Snow Bliss",
+      "name": "Aakash",
+      "phone": "887676767",
+      "email": "aakash@gmail.com",
+      "cost": "Rs. 2704"
+    },
+    {
+      "id": 38064,
+      "hotel_name": "Pride Plaza Hotel ",
+      "name": "Bhumika",
+      "phone": "88868687788",
+      "email": "bhumika@gmail.com",
+      "cost": "Rs. 4000"
+    },
+    {
+      "id": 34755,
+      "hotel_name": "Vivaan - The Sun Rise",
+      "name": "Aakash",
+      "phone": "8678676876",
+      "email": "aakash@gmail.com",
+      "cost": "Rs. 3134"
+    },
+    {
+      "id": 90598,
+      "hotel_name": "Snow Bliss",
+      "name": "Nikita",
+      "phone": "8998676778",
+      "email": "nikita@gmail.com",
+      "cost": "Rs. 2704"
+    }
+  ]
 }

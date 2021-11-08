@@ -94,6 +94,7 @@ class Details extends Component{
         let response = await axios.get(`${url}/${hotelId}`)
         console.log(response.data[0])
         this.setState({details: response.data[0],rooms:response.data[0].type})
+        sessionStorage.setItem('cost',response.data[0].cost)
     }
 
 }
