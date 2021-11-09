@@ -31,6 +31,14 @@
       "phone": "8998676778",
       "email": "nikita@gmail.com",
       "cost": "Rs. 2704"
+    },
+    {
+      "id": 75244,
+      "hotel_name": "DoubleTree by Hilton",
+      "name": "Bhumika",
+      "phone": "8786876876",
+      "email": "bhumika@gmail.com",
+      "cost": "Rs. 2419"
     }
   ]
 }
