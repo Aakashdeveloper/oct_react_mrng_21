@@ -31,6 +31,7 @@ Depolyment
 
 React-JWT(Login Logout)-2
 React_hooks -1
+
 React-GraphQL-1
 HOC
 Basic React Native=1
@@ -369,3 +370,6 @@ Dummy api
 promise > is method which is waiting for the resposen
 from above call
 waiting to resolve the data
+
+npm uninstall react-router-dom
+npm i react-router-dom@5.2.0
