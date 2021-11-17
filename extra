@@ -21,14 +21,13 @@ React = 3
 Mock API
 json-server
 Github
-////////////////////////////////
 Depolyment
 -> MERN
 -> heroku
 -> Aws
 -> Docker
 -> Nginx
-
+////////////////////////////////
 React-JWT(Login Logout)-2
 React_hooks -1
 
@@ -373,3 +372,6 @@ waiting to resolve the data
 
 npm uninstall react-router-dom
 npm i react-router-dom@5.2.0
+
+docker build . -t reactapp
+docker run -p 3000:8712 reactapp
