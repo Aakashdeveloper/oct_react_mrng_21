@@ -39,6 +39,14 @@
       "phone": "8786876876",
       "email": "bhumika@gmail.com",
       "cost": "Rs. 2419"
+    },
+    {
+      "id": 72134,
+      "hotel_name": "Snow Bliss",
+      "name": "Arushi",
+      "email": "arushi@gmail.com",
+      "phone": "454657766",
+      "cost": "Rs. 2704"
     }
   ]
 }

@@ -8,9 +8,9 @@ class PlaceBooking extends Component {
         this.state={
             id:Math.floor(Math.random()*100000),
             hotel_name:this.props.match.params.hotel_name,
-            name:'',
-            phone:'',
-            email:'',
+            name:sessionStorage.getItem('userData')?sessionStorage.getItem('userData').split(',')[0]:'',
+            email:sessionStorage.getItem('userData')?sessionStorage.getItem('userData').split(',')[1]:'',
+            phone:sessionStorage.getItem('userData')?sessionStorage.getItem('userData').split(',')[2]:'',
             cost:`Rs. ${sessionStorage.getItem('cost')}`
         }
     }
@@ -33,6 +33,13 @@ class PlaceBooking extends Component {
     }
 
     render(){
+        if(!sessionStorage.getItem('userData')){
+            return(
+                <div>
+                    <h1>Login First To Place Booking</h1>
+                </div>
+            )
+        }
         return(
             <div className="container">
                 <div className="panel panel-info">
