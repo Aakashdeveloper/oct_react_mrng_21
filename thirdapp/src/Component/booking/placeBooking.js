@@ -11,7 +11,7 @@ class PlaceBooking extends Component {
             name:sessionStorage.getItem('userData')?sessionStorage.getItem('userData').split(',')[0]:'',
             email:sessionStorage.getItem('userData')?sessionStorage.getItem('userData').split(',')[1]:'',
             phone:sessionStorage.getItem('userData')?sessionStorage.getItem('userData').split(',')[2]:'',
-            cost:`Rs. ${sessionStorage.getItem('cost')}`
+            cost:sessionStorage.getItem('cost')
         }
     }
 
@@ -47,39 +47,42 @@ class PlaceBooking extends Component {
                         Place Booking
                     </div>
                     <div className="panel-body">
-                        <div className="form-group">
-                            <label>OrderId</label>
-                            <input className="form-control" readOnly name="id"
-                            value={this.state.id}/>
-                        </div>
-                        <div className="form-group">
-                            <label>Hotel Name</label>
-                            <input className="form-control" readOnly name="hotel_name"
-                            value={this.state.hotel_name}/>
-                        </div>
-                        <div className="form-group">
-                            <label>Cost</label>
-                            <input className="form-control" readOnly name="cost"
-                            value={this.state.cost}/>
-                        </div>
-                        <div className="form-group">
-                            <label>Name</label>
-                            <input className="form-control" name="name"
-                            value={this.state.name} onChange={this.handleChange}/>
-                        </div>
-                        <div className="form-group">
-                            <label>Phone</label>
-                            <input className="form-control" name="phone"
-                            value={this.state.phone} onChange={this.handleChange}/>
-                        </div>
-                        <div className="form-group">
-                            <label>Email</label>
-                            <input className="form-control" name="email"
-                            value={this.state.email} onChange={this.handleChange}/>
-                        </div>
-                        <button className="btn btn-success" onClick={this.handleSubmit}>
-                            Submit
-                        </button>
+                        <form method="post" action="https://developerpayment.herokuapp.com/paynow">
+                            <div className="form-group">
+                                <label>OrderId</label>
+                                <input className="form-control" readOnly name="id"
+                                value={this.state.id}/>
+                            </div>
+                            <div className="form-group">
+                                <label>Hotel Name</label>
+                                <input className="form-control" readOnly name="hotel_name"
+                                value={this.state.hotel_name}/>
+                            </div>
+                            <div className="form-group">
+                                <label>Cost</label>
+                                <input className="form-control" readOnly name="cost"
+                                value={this.state.cost}/>
+                            </div>
+                            <div className="form-group">
+                                <label>Name</label>
+                                <input className="form-control" name="name"
+                                value={this.state.name} onChange={this.handleChange}/>
+                            </div>
+                            <div className="form-group">
+                                <label>Phone</label>
+                                <input className="form-control" name="phone"
+                                value={this.state.phone} onChange={this.handleChange}/>
+                            </div>
+                            <div className="form-group">
+                                <label>Email</label>
+                                <input className="form-control" name="email"
+                                value={this.state.email} onChange={this.handleChange}/>
+                            </div>
+                            <button className="btn btn-success" onClick={this.handleSubmit}
+                            type="submit">
+                                Submit
+                            </button>
+                        </form>
                     </div>
                 </div>
             </div>                                                  

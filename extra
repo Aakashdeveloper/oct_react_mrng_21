@@ -27,10 +27,9 @@ Depolyment
 -> Aws
 -> Docker
 -> Nginx
-////////////////////////////////
 React-JWT(Login Logout)-2
+////////////////////////////////
 React_hooks -1
-
 React-GraphQL-1
 HOC
 Basic React Native=1
@@ -375,3 +374,25 @@ npm i react-router-dom@5.2.0
 
 docker build . -t reactapp
 docker run -p 3000:8712 reactapp
+
+
+var a = "status=TXN_SUCCESS&ORDERID=TEST_91084&date=2021-11-19%2006:56:19.0&bank=ICICI%20Bank"
+undefined
+a.split('&A')
+['status=TXN_SUCCESS&ORDERID=TEST_91084&date=2021-11-19%2006:56:19.0&bank=ICICI%20Bank']
+a.split('&')
+(4) ['status=TXN_SUCCESS', 'ORDERID=TEST_91084', 'date=2021-11-19%2006:56:19.0', 'bank=ICICI%20Bank']
+a.split('&')[0].split('=')
+(2) ['status', 'TXN_SUCCESS']
+a.split('&')[0].split('=')[1]
+'TXN_SUCCESS'
+a.split('&')[1].split('=')[1]
+'TEST_91084'
+a.split('&')[2].split('=')[1]
+'2021-11-19%2006:56:19.0'
+a.split('&')[3].split('=')[1]
+'ICICI%20Bank'
+a.split('&')[1].split('=')[1].split('_')
+(2) ['TEST', '91084']
+a.split('&')[1].split('=')[1].split('_')[1]
+'91084'

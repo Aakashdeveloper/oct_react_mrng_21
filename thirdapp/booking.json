@@ -47,6 +47,39 @@
       "email": "arushi@gmail.com",
       "phone": "454657766",
       "cost": "Rs. 2704"
+    },
+    {
+      "id": 91084,
+      "hotel_name": "ITC Maratha",
+      "name": "Arushi",
+      "email": "arushi@gmail.com",
+      "phone": "454657766",
+      "cost": "8399",
+      "status": "TXN_SUCCESS",
+      "date": "2021-11-19%2006:56:19.0",
+      "bank": "ICICI%20Bank"
+    },
+    {
+      "id": 8938,
+      "hotel_name": "The Orchid Hotel",
+      "name": "Arushi",
+      "email": "arushi@gmail.com",
+      "phone": "454657766",
+      "cost": "5170",
+      "status": "TXN_SUCCESS",
+      "date": "2021-11-19%2007:10:47.0",
+      "bank": "Bharat%20Bank"
+    },
+    {
+      "id": 26594,
+      "hotel_name": "Hometel Chandigarh",
+      "name": "Arushi",
+      "email": "arushi@gmail.com",
+      "phone": "454657766",
+      "cost": "2419",
+      "status": "TXN_FAILURE",
+      "date": "2021-11-19%2007:12:05.0",
+      "bank": "South%20Indian%20Bank"
     }
   ]
 }
