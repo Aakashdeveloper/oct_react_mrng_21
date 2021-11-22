@@ -23,7 +23,7 @@ class Header extends Component {
     }
 
     conditionalHeader = () => {
-        if(this.state.userdata.name || sessionStorage.getItem('username') !== null){
+        if(this.state.userdata.name || localStorage.getItem('username') !== null){
             if(this.props.location.search){
                 const code = (this.props.location.search).split('=')[1];
                 if(code){
@@ -31,7 +31,7 @@ class Header extends Component {
                         <>
                             <li>
                                 <a>
-                                    Hi {sessionStorage.getItem('username')}
+                                    Hi {this.state.username}
                                     <img src={this.state.imgurl} style={{height:50,width:50}}/>
                                     
                                 </a>
@@ -116,7 +116,7 @@ class Header extends Component {
                     console.log(data)
                     var user = data.name;
                     var img = data.avatar_url
-                    sessionStorage.setItem('username',user);
+                    localStorage.setItem('username',user);
                     this.setState({username:user, imgurl:img})
                 })
             }
