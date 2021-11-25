@@ -31,8 +31,8 @@ React-JWT(Login Logout)-2
 React_hooks -1
 React-GraphQL-1
 HOC
-////////////////////////////////
 Basic React Native=1
+////////////////////////////////
 React-Redux =1
 React-Redux =1
 //////Walkthrough////////
@@ -399,3 +399,16 @@ a.split('&')[1].split('=')[1].split('_')[1]
 
 
 npm i apollo-boost apollo-graphql graphql-tag react-apollo
+
+npm i -g create-react-native-app
+create-react-native-app mymobi
+
+
+/////redux arch
+>>> action >> where all Api call happen
+>>> reducer >> will update store with latest state
+>>> store >> will save state and pass to view
+>>> view >> is the display part
+
+
+npm i redux react-redux
