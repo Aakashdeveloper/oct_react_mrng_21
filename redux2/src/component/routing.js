@@ -3,6 +3,7 @@ import {BrowserRouter, Route} from 'react-router-dom';
 import Home from '../container/Home';
 import Header from './header';
 import Footer from './footer';
+import NewsDetails from '../container/NewsDetails';
 
 
 const Routing = () => {
@@ -10,13 +11,10 @@ const Routing = () => {
         <BrowserRouter>
             <Header/>
                 <Route exact path="/" component={Home}/>
-             
+                <Route path="/details/:id" component={NewsDetails}/>
             <Footer/>
         </BrowserRouter>
     )
 }
 
 export default Routing
-
-/*  import NewsDetails from '../container/NewsDetails';
- <Route path="/details/:id" component={NewsDetails}/> */

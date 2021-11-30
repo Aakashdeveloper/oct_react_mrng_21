@@ -9,3 +9,34 @@ export function latestNews(){
         payload:output
     }
 }
+
+export function articleNews(){
+    const output = fetch(`${baseUrl}/articles?_start=3&_end=10`,{method:'GET'})
+    .then((data) => data.json())
+
+    return{
+        type:'ARTICLE_NEWS',
+        payload:output
+    }
+}
+
+
+export function galleriesNews(){
+    const output = fetch(`${baseUrl}/galleries?_limit=5`,{method:'GET'})
+    .then((data) => data.json())
+
+    return{
+        type:'GALLERY_NEWS',
+        payload:output
+    }
+}
+
+export function selectedNews(id){
+    const output = fetch(`${baseUrl}/articles?id=${id}`,{method:'GET'})
+    .then((data) => data.json())
+
+    return{
+        type:'SELECTED_NEWS',
+        payload:output
+    }
+}
