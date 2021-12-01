@@ -34,7 +34,6 @@ HOC
 Basic React Native=1
 React-Redux =1
 React-Redux =1
-//////Walkthrough////////
 React-Saga -1
 React-with-typescript-1
 Testing Jest Enzime
@@ -411,3 +410,43 @@ create-react-native-app mymobi
 
 
 npm i redux react-redux
+
+function loop(){
+    for(i=0;i<5;i++){
+       console.log(i)
+    }
+}
+loop()
+VM86:3 0
+VM86:3 1
+VM86:3 2
+VM86:3 3
+VM86:3 4
+
+function * loop(){
+    for(i=0;i<5;i++){
+       yield (i)
+    }
+}
+loop()
+loop {<suspended>}
+var data = loop()
+undefined
+data.next()
+{value: 0, done: false}
+data.next()
+{value: 1, done: false}
+data.next()
+{value: 2, done: false}
+data.next()
+{value: 3, done: false}
+data.next()
+{value: 4, done: false}
+data.next()
+{value: undefined, done: true}
+
+///
+npm i redux react-redux react-router-dom react-slick redux-promise
+
+///Testing///
+npm i enzyme enzyme-adapter-react-16 react-addons-test-utils react-test-renderer

@@ -11,7 +11,7 @@ class BaseButton extends React.Component {
     }
 
     onClick = () => {
-      this.setState({name:'Some Things'})
+      this.setState({name:'Some Thing'})
     };
   
     render() {

@@ -30,8 +30,5 @@ function mapStateToProps(state){
     }
 }
 
-App.protoTypes ={
-    dispatch: PropTypes.func
-}
 
 export default connect(mapStateToProps,)(App)
